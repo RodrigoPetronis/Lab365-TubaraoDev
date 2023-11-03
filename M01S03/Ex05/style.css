@@ -1,0 +1,22 @@
+body{
+    margin: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+input{
+    margin: 5px;
+    width: 500px;
+}
+
+
+
+button{
+    background-color: rgb(197, 238, 224);
+}
+
+#containerRes{
+  max-width: 600px;
+   flex-wrap: wrap;  
+}
