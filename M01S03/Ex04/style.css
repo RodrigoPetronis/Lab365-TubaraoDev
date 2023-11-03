@@ -1,0 +1,39 @@
+body{
+    margin: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+label{
+    font-size: smaller;
+    align-self: flex-start;
+    padding-left: 5px;
+}
+#nome, #conteudo,#resposta{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+input{
+    margin: 5px;
+    width: 500px;
+}
+
+.data{
+    width: 200px;
+}
+
+h4{
+    border: solid 2px black;
+    width: 350px;
+    height: 30px;
+    border-radius: 20px;
+    padding: 15px;
+    text-align: center;
+    background-color:rgb(188, 216, 243);
+}
+
+button{
+    background-color: rgb(197, 238, 224);
+}

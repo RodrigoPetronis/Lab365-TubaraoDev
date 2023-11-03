@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Carta de pedido de férias</title>
+</head>
+
+<body>
+    <div class="container">
+
+        <div id="conteudo">
+            <div id="inputContainer">
+                <label for="nome">Nome do Funcionário</label>
+                <input id="nome" type="text" placeholder="Nome Completo">
+                
+                    <div><label for="dataInicio">Data de início</label></div>
+                    <input class="data" id="dataInicio" type="datetime" placeholder="dd/mm/YYY">
+                    <div><label for="dataTermino">Data de término</label></div>
+                    <input class="data" id="dataTermino" type="datetime" placeholder="dd/mm/YYY">
+                
+                <button id="gerarCarta">Gerar Carta</button>
+            </div>
+        </div>
+        <div id="resp" hidden>
+            <h6>Caro responsável</h6>
+            <br>
+            <p>Gostaria de solicitar minhas férias</p>
+            <br>
+            <p id="nomeFuncionario"></p>
+            <br>
+            <p id="respDataInicio"></p>
+            <p id="respDataTermino"></p>
+            <br>
+            <p>Agradeço a atenção</p>
+            <br>
+            <p id="agradecimento"></p>
+            <br>
+            <p id="dataAtual"></p>
+            <button id="outraRes">Gerar outra Carta</button>
+        </div>
+    </div>
+    <script src="app.js"></script>
+</body>
+
+</html>
