@@ -9,7 +9,7 @@ label{
     align-self: flex-start;
     padding-left: 5px;
 }
-#nome, #conteudo,#resposta{
+#nome, #conteudo{
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -22,16 +22,6 @@ input{
 
 .data{
     width: 200px;
-}
-
-h4{
-    border: solid 2px black;
-    width: 350px;
-    height: 30px;
-    border-radius: 20px;
-    padding: 15px;
-    text-align: center;
-    background-color:rgb(188, 216, 243);
 }
 
 button{
