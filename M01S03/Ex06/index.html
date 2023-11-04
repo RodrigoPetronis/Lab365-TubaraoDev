@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Lanchonete</title>
+</head>
+
+<body>
+    <h1>Cardápio</h1>
+
+    <table border="1">
+        <thead>
+            <tr>
+                <th>Código</th>
+                <th>Produto</th>
+                <th>Valor</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>1123</td>
+                <td>Hamburguer</td>
+                <td>R$12,00</td>
+
+            </tr>
+            <tr>
+                <td>3423</td>
+                <td>Sanduíche de pernil</td>
+                <td>R$9,00</td>
+
+            </tr>
+            <tr>
+                <td>4521</td>
+                <td>Bauru</td>
+                <td>R$15,00</td>
+
+            </tr>
+            <tr>
+                <td>5322</td>
+                <td>Sanduíche de Mortadela</td>
+                <td>R$34,99</td>
+
+            </tr>
+        </tbody>
+    </table>
+    <div class="container"></div>
+    <select name="Selecione" id="lanche">
+        <option value="0" label="Escolha o lanche"></option>
+        <option value="1123">Hamburguer</option>
+        <option value="3423">Sanduíche de Pernil</option>
+        <option value="4521">Bauru</option>
+        <option value="5322">Sanduíche de Mortadela</option>
+    </select>
+    <select name="quantidade" id="quantidade">
+        <option value="0" label="Quantidade"></option>
+        <option value="1">1</option>
+        <option value="2">2</option>
+        <option value="3">3</option>
+        <option value="4">4</option>
+    </select>
+    </div>
+    <button id="finalizar">Finalizar</button>
+    <p id="res"></p>
+    <script src="app.js"></script>
+</body>
+
+</html>
