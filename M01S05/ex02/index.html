@@ -1,0 +1,55 @@
+<!-- Escreva diretamente no HTML um ou mais itens para a lista (por exemplo: “Estudar HTML e CSS”, “Estudar JavaScript”, 
+    conforme a imagem de referência no exercício 1 da semana anterior).
+
+Cada linha da lista deve conter: checkbox para o usuário marcar que aquela atividade já foi realizada; 
+o texto que o usuário digitou ao cadastrar a atividade; botão para excluir a atividade da lista, caso desejado.
+
+Altere os estilos desses itens:
+
+Botão de excluir deve ser sucinto, mas deve indicar de forma correta e fácil o que o botão faz. 
+Pode ser utilizado um ícone.
+Ajustar espaçamento entre os itens da lista e os elementos de um mesmo item.
+Criar um estilo para quando a tarefa estiver concluída, ou seja, o checkbox estiver marcado. Nesse caso, 
+o texto deve ser tachado (line-through). -->
+
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>toDoList</title>
+</head>
+
+<body>
+    <div class="container">
+        <header>Lista de Afazeres</header>
+        
+            <input type="text" id="inputAdicionar">
+            <button id="adicionar">adicionar</button>
+        
+        <div class="lista">
+            <ul>
+                <div class="li">
+                    <input type="checkbox" name="" id="">
+                    <li>HTML</li>
+                    <button type="button">X</button>
+                </div>
+                <div class="li">
+                    <input type="checkbox" name="" >
+                    <li class="tarefaConcluida">JS</li>
+                    <button type="button">X</button>
+                </div>
+                <div class="li">
+                    <input type="checkbox" name="" id="">
+                    <li>CSS</li>
+                    <button type="button">X</button>
+                </div>
+            </ul>
+        </div>
+    </div>
+</body>
+
+</html>
