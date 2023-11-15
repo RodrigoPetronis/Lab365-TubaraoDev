@@ -16,10 +16,13 @@ botaoAdicionar.addEventListener("click", () => {
     const elemento = document.createElement("li");
     elemento.innerHTML =
       `<input type="checkbox">
-         <span>${e}</span>
+         <span id="spanElemento">${e}</span>
         <button>X</button>`;
     lista.appendChild(elemento);
+    elemento.className = "elemento"
   });
   inputAdicionar.value = "";
+  inputAdicionar.focus();
 
 })
+
