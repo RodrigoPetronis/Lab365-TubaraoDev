@@ -3,15 +3,15 @@ const inputAdicionar = document.querySelector("#inputAdicionar");
 const botaoAdicionar = document.querySelector("#adicionar");
 const listaTarefa = [];
 
-const lista = document.querySelector("#lista")
-let listaAtualizada = listaTarefa;
+var lista = document.querySelector("#lista")
+var listaAtualizada = listaTarefa
 
-function limparLista() {
-  listaAtualizada = [];
-}
+inputAdicionar.value = "";
+inputAdicionar.focus();
 
 
 function mostrarLista() {
+  lista.innerHTML = "";
 
   listaAtualizada.forEach((e) => {
     const feito = e.feito ? "checked" : ""
@@ -22,14 +22,13 @@ function mostrarLista() {
          <span id="spanElemento">${e.nome}</span>
         <button id = "botaoElemento">X</button>`;
     lista.appendChild(elemento);
+
     feito ? elemento.className = "tarefaConcluida" : "elemento"
 
-
     elemento.querySelector("button").addEventListener("click", () => {
-      elemento.remove();
-      listaAtualizada = listaTarefa.filter(tarefa => tarefa !== e);
-    });
-
+      removerDaLista(e)
+      lista.removeChild(elemento)
+    })
 
   })
 }
@@ -44,15 +43,21 @@ const adicionaLista = botaoAdicionar.addEventListener("click", () => {
       feito: false,
     }
 
-    listaTarefa.push(novaTarefa);
-    lista.innerHTML = "";
+    listaAtualizada.push(novaTarefa);
+    mostrarLista();
 
     inputAdicionar.value = "";
     inputAdicionar.focus();
-    mostrarLista();
   } else {
     alert("Digite uma Tarefa!")
   }
 
 })
+
+function removerDaLista(e) {
+  listaAtualizada = listaAtualizada.filter((elFilter) => {
+    return e !== elFilter
+  })
+
+};
 
