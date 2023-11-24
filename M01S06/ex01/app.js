@@ -23,7 +23,7 @@ function mostrarLista() {
         <button id = "botaoElemento" class = "tarefaNaoConcluida">🗑️</button>`;
     lista.appendChild(elemento);
 
-    //Tachar item feito
+    //Tachar item feito.
     let caixa = elemento.querySelector("input");
     caixa.addEventListener("click", () => {
       var checado = caixa.checked ? "checked" : ""
