@@ -20,10 +20,15 @@ function mostrarLista() {
     elemento.innerHTML =
       `<input type="checkbox" ${feito}>
          <span id="spanElemento">${e.nome}</span>
-        <button id = "botaoElemento">X</button>`;
+        <button id = "botaoElemento">🗑️</button>`;
     lista.appendChild(elemento);
 
-    feito ? elemento.className = "tarefaConcluida" : "elemento"
+    //Tachar item feito.
+    let caixa = elemento.querySelector("input");
+    caixa.addEventListener("click", () => {
+      var checado = caixa.checked ? "checked" : ""
+      checado === "checked" ? elemento.className = "tarefaConcluida": elemento.className = "tarefaNaoConcluida"
+    })
 
     elemento.querySelector("button").addEventListener("click", () => {
       removerDaLista(e)
