@@ -20,7 +20,7 @@ function mostrarLista() {
     elemento.innerHTML =
       `<input type="checkbox" ${feito}>
          <span id="spanElemento">${e.nome}</span>
-        <button id = "botaoElemento" class = "tarefaNaoConcluida">🗑️</button>`;
+        <button id = "botaoElemento">🗑️</button>`;
     lista.appendChild(elemento);
 
     //Tachar item feito.
