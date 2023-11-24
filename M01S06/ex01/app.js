@@ -31,8 +31,8 @@ function mostrarLista() {
     })
 
     elemento.querySelector("button").addEventListener("click", () => {
-      removerDaLista(e)
-      lista.removeChild(elemento)
+             removerDaLista(e)
+      lista.removeChild(elemento)     
     })
 
   })
