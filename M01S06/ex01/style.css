@@ -64,6 +64,14 @@ li{
     text-decoration: line-through;
 }
 
+.tarefaNaoConcluida{
+    text-decoration: none;
+}
+
+#botaoElemento{
+    text-decoration: none;
+}
+
 #spanElemento{
    min-width:150px;
 }
