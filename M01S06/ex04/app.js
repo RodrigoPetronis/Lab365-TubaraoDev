@@ -14,20 +14,28 @@ function mostrarLista() {
   lista.innerHTML = "";
 
   listaAtualizada.forEach((e) => {
-    const feito = e.feito ? "checked" : ""
-
-    const elemento = document.createElement("li");
+    let feito = e.feito ? "checked" : ""
+    
+      const elemento = document.createElement("li");
     elemento.innerHTML =
       `<input type="checkbox" ${feito}>
          <span id="spanElemento">${e.nome}</span>
         <button id = "botaoElemento">🗑️</button>`;
     lista.appendChild(elemento);
 
-    //Tachar item feito.
-    let caixa = elemento.querySelector("input");
+    //Altera classe para adicionar estilo tachar
+    feito === "checked" ? elemento.className = "tarefaConcluida" : elemento.className = "tarefaNaoConcluida"
+
+    //Altera checkbox na lista
+    var caixa = elemento.querySelector("input");
     caixa.addEventListener("click", () => {
-      var checado = caixa.checked ? "checked" : ""
-      checado === "checked" ? elemento.className = "tarefaConcluida" : elemento.className = "tarefaNaoConcluida"
+      feito = caixa.checked ? "checked" : ""
+      if (feito === "checked") {
+        e.feito = true
+      } else {
+        e.feito = false;
+      }
+      mostrarLista()
     })
 
     elemento.querySelector("button").addEventListener("click", () => {
@@ -40,10 +48,10 @@ function mostrarLista() {
     })
   })
 
-   //contador
- const contador = document.querySelector("#contador");
- const qntTarefas = (listaAtualizada.length)
- contador.innerHTML = qntTarefas
+  //contador
+  const contador = document.querySelector("#contador");
+  const qntTarefas = (listaAtualizada.length)
+  contador.innerHTML = qntTarefas
 
 }
 
