@@ -7,5 +7,10 @@ public class App {
         contaBancaria1.sacar(51.0);
         contaBancaria1.depositar(2);
         contaBancaria1.sacar(50);
+
+        ContaPoupanca contaPoupanca1 = new ContaPoupanca(2, 1, "Poupador", 100, 5);
+
+        System.out.println("O Saldo da Conta Poupança é: "+contaPoupanca1.saldo);
+        contaPoupanca1.adicionarJuros();
     }
 }
