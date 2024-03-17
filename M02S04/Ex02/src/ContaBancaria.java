@@ -27,38 +27,6 @@ public class ContaBancaria {
         System.out.println("Saldo atual: "+saldo);}
     }
 
-    public int getNumeroDaConta() {
-        return numeroDaConta;
-    }
-
-    public void setNumeroDaConta(int numeroDaConta) {
-        this.numeroDaConta = numeroDaConta;
-    }
-
-    public int getAgencia() {
-        return agencia;
-    }
-
-    public void setAgencia(int agencia) {
-        this.agencia = agencia;
-    }
-
-    public String getNomeDoTitular() {
-        return nomeDoTitular;
-    }
-
-    public void setNomeDoTitular(String nomeDoTitular) {
-        this.nomeDoTitular = nomeDoTitular;
-    }
-
-    public double getSaldo() {
-        return saldo;
-    }
-
-    public void setSaldo(double saldo) {
-        this.saldo = saldo;
-    }
-
 }
 
 /*
