@@ -1,6 +1,6 @@
 public class App {
     public static void main(String[] args) throws Exception {
-        Aplicacao aplicacao = new Aplicacao();
+        DevHeroiAplicacao aplicacao = new DevHeroiAplicacao();
         aplicacao.executar();
     }
 }

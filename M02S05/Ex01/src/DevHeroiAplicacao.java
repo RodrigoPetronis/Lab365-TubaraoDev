@@ -1,4 +1,4 @@
-public class Aplicacao {
+public class DevHeroiAplicacao {
     public void executar(){
 
         System.out.println("---------- MENU ---------");
