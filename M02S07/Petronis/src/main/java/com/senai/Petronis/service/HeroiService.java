@@ -2,15 +2,20 @@ package com.senai.Petronis.service;
 
 import java.util.List;
 
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import com.senai.Petronis.model.Heroi;
+import com.senai.Petronis.repository.HeroiRepository;
 
 @Service
 public class HeroiService {
+    
+    @Autowired
+    HeroiRepository heroiRepository;
 
 
-    public Heroi consultar() {
+    public List<Heroi> consultar() {
         return heroiRepository.consultar();
     }
 
