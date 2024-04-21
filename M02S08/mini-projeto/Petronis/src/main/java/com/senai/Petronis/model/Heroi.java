@@ -17,7 +17,7 @@ import lombok.ToString;
 public class Heroi {
 
     @Id 
-    @GeneratedValue(strategy= GenerationType.IDENTITY)
+    @GeneratedValue(strategy= GenerationType.IDENTITY)//alteração
     private Integer id;
     private String nome;
     private String superpoder;
