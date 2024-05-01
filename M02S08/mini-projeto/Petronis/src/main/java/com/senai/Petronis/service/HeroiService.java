@@ -16,19 +16,12 @@ public class HeroiService {
 
 
     public List<Heroi> consultar() {
-        return heroiRepository.consultar();
+        return heroiRepository.findAll();
     }
 
     public Heroi inserir(Heroi heroi) {
-        heroiRepository.adicionar(heroi);
+        heroi = heroiRepository.save(heroi);
         return heroi;
     }
 
-
-
 }
-
-/* 
-Crie uma classe de serviço (“HeroiService”) para conter a lógica de negócio de consulta e salvar heróis.
-
-Use os Beans e injeção de dependência do framework na implementação. */
